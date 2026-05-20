@@ -7,31 +7,42 @@ document.getElementById("exploreBtn").addEventListener("click", function () {
     });
 
 });
-// ISLAMIC CALENDAR
+// AUTO ACCURATE ISLAMIC DATE
 
-// ISLAMIC CALENDAR FIXED
+async function loadHijriDate(){
 
-const today = new Date();
+    try{
 
-/* 1 day subtract */
-today.setDate(today.getDate() - 1);
+        const response = await fetch(
+        "https://api.aladhan.com/v1/gToH");
 
-const hijriDate = new Intl.DateTimeFormat(
-    'en-TN-u-ca-islamic', {
+        const data = await response.json();
 
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric'
+        const hijri =
+        data.data.hijri;
 
-}).format(today);
+        const gregorian =
+        data.data.gregorian;
 
-const gregorianDate = new Date().toDateString();
+        document.getElementById("hijri-date")
+        .innerHTML =
+        `${hijri.day} ${hijri.month.en} ${hijri.year} AH`;
 
-document.getElementById("hijri-date").innerHTML =
-    hijriDate;
+        document.getElementById("gregorian-date")
+        .innerHTML =
+        `${gregorian.weekday.en}, ${gregorian.day} ${gregorian.month.en} ${gregorian.year}`;
 
-document.getElementById("gregorian-date").innerHTML =
-    gregorianDate;
+    }
+
+    catch(error){
+
+        console.log("Hijri date error");
+
+    }
+
+}
+
+loadHijriDate();
 // QURAN VERSE OF THE DAY
 
 const quranVerses = [
