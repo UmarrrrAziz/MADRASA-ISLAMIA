@@ -85,14 +85,3 @@ function changeHadith() {
 changeHadith();
 
 setInterval(changeHadith, 3000);
-// LIVE NOTICE
-
-const savedNotice =
-    localStorage.getItem("notice");
-
-if (savedNotice) {
-
-    document.getElementById("liveNotice")
-        .innerHTML = savedNotice;
-
-}
