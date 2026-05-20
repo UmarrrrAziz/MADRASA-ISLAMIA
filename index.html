@@ -11,7 +11,45 @@
 
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
+<!-- FIREBASE -->
 
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+
+<script>
+
+const firebaseConfig = {
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBfBRGCoSXV_W2PsC7bTTRMW5wQjFPSO-c",
+  authDomain: "madrasa-islamia-noor-ul-uloom.firebaseapp.com",
+  projectId: "madrasa-islamia-noor-ul-uloom",
+  storageBucket: "madrasa-islamia-noor-ul-uloom.firebasestorage.app",
+  messagingSenderId: "412330676566",
+  appId: "1:412330676566:web:4b09c87e634b4a78d686f7",
+  measurementId: "G-YNCRP0BCEK"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+};
+
+firebase.initializeApp(firebaseConfig);
+
+const db = firebase.database();
+
+</script>
 <body>
 
     <!-- HEADER -->
