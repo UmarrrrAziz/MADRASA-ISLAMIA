@@ -233,6 +233,33 @@ body {
     padding:20px;
 
 }
+.hero-content{
+
+    max-width:900px;
+
+    color:white;
+
+}
+
+.hero-content h1{
+
+    font-size:65px;
+
+    margin:20px 0;
+
+}
+
+.hero-content h2{
+
+    font-size:36px;
+
+}
+
+.hero-content p{
+
+    font-size:22px;
+
+}
 
 /* ARABIC TITLE */
 
