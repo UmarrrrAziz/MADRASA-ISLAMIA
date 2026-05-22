@@ -739,3 +739,24 @@ footer {
     letter-spacing:1px;
 
 }
+/* ARABIC WATERMARK */
+
+.arabic-watermark{
+
+    position:fixed;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    font-size:220px;
+
+    color:rgba(255,215,0,0.05);
+
+    z-index:-1;
+
+    pointer-events:none;
+
+}
