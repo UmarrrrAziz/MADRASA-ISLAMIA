@@ -962,3 +962,54 @@ footer {
     pointer-events:none;
 
 }
+/* FLOATING LANTERNS */
+
+.lantern{
+
+    position:fixed;
+
+    font-size:42px;
+
+    z-index:999;
+
+    animation:floatLantern 4s ease-in-out infinite;
+
+    opacity:0.9;
+
+}
+
+/* LEFT LANTERN */
+
+.lantern1{
+
+    top:120px;
+
+    left:20px;
+
+}
+
+/* RIGHT LANTERN */
+
+.lantern2{
+
+    top:120px;
+
+    right:20px;
+
+}
+
+@keyframes floatLantern{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-18px);
+
+    }
+
+}
