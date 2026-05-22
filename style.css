@@ -491,3 +491,40 @@ footer {
     }
 
 }
+/* ABOUT SECTION */
+
+.about{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+    padding:80px 8%;
+    flex-wrap:wrap;
+}
+
+.about-text{
+    flex:1;
+    min-width:300px;
+}
+
+.about-text h2{
+    font-size:40px;
+    margin-bottom:20px;
+    color:#0b4f2f;
+}
+
+.about-text p{
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+.about-image{
+    flex:1;
+    min-width:300px;
+}
+
+.about-image img{
+    width:100%;
+    border-radius:10px;
+}
