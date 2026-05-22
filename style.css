@@ -489,16 +489,17 @@ footer {
     color:#333;
     line-height:1.7;
 }
-/* ARABIC CALLIGRAPHY HEADER */
+
+/* ARABIC TITLE */
 
 .arabic-title{
     font-size:55px;
     color:#ffd700;
     margin-bottom:20px;
-    font-weight:bold;
     direction:rtl;
-    text-shadow:0 0 10px rgba(255,215,0,0.5);
-    line-height:1.6;
+    text-align:center;
+    line-height:1.7;
+    text-shadow:0 0 15px rgba(255,215,0,0.5);
 }
 
 /* MOBILE */
