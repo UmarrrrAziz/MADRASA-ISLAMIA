@@ -682,18 +682,46 @@ footer {
     }
 
 }
+/* PREMIUM DIVIDER */
+
 .divider{
 
-    width:120px;
+    width:220px;
 
-    height:5px;
+    height:6px;
 
-    background:#ffd700;
+    background:
+    linear-gradient(to right,
+    transparent,
+    #ffd700,
+    transparent);
 
-    margin:60px auto;
+    margin:80px auto;
 
     border-radius:50px;
 
-    box-shadow:0 0 10px rgba(255,215,0,0.5);
+    position:relative;
+
+}
+
+.divider::before{
+
+    content:"☪";
+
+    position:absolute;
+
+    top:-18px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    color:#0b4f2f;
+
+    font-size:28px;
+
+    background:white;
+
+    padding:0 12px;
 
 }
