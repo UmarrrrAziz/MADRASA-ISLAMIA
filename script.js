@@ -92,7 +92,14 @@ function changeHadith() {
         hadithIndex = 0;
     }
 }
+// LOADER
 
+window.addEventListener("load", function(){
+
+    document.getElementById("loader")
+    .style.display = "none";
+
+});
 changeHadith();
 
 setInterval(changeHadith, 3000);
