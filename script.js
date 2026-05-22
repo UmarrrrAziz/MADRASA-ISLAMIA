@@ -103,3 +103,26 @@ window.addEventListener("load", function(){
 changeHadith();
 
 setInterval(changeHadith, 3000);
+// TYPING EFFECT
+
+const text =
+"Serving The Ummah Since 1998...";
+
+let index = 0;
+
+function typeText(){
+
+    if(index < text.length){
+
+        document.querySelector(".typing-text")
+        .innerHTML += text.charAt(index);
+
+        index++;
+
+        setTimeout(typeText, 100);
+
+    }
+
+}
+
+typeText();
