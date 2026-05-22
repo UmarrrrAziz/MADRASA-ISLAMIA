@@ -724,3 +724,18 @@ footer {
     background:#ffcc00;
 
 }
+/* TYPING TEXT */
+
+.typing-text{
+
+    font-size:22px;
+
+    color:#ffd700;
+
+    margin-top:15px;
+
+    min-height:30px;
+
+    letter-spacing:1px;
+
+}
