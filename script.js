@@ -126,3 +126,31 @@ function typeText(){
 }
 
 typeText();
+
+document.getElementById("admissionForm").addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const inputs = this.querySelectorAll("input, textarea");
+
+    const data = {
+        studentName: inputs[0].value,
+        fatherName: inputs[1].value,
+        age: inputs[2].value,
+        class: inputs[3].value,
+        phone: inputs[4].value,
+        address: inputs[5].value
+    };
+
+    try {
+        await fetch("https://script.google.com/macros/s/AKfycbwYW3gqCpjj-ulZKe9iiZ29DsDU79O35VrVkCywnvads5hjdaWotvaIk40yGXU0g20e/exec", {
+            method: "POST",
+            body: JSON.stringify(data)
+        });
+
+        alert("Admission Submitted Successfully!");
+        this.reset();
+    } catch(err) {
+        alert("Submission Failed!");
+        console.error(err);
+    }
+});
