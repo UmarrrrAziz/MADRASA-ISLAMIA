@@ -1112,3 +1112,65 @@ footer {
     }
 
 }
+.admission-section{
+
+    padding:80px 10%;
+
+    text-align:center;
+
+    background:#f8f8f8;
+
+}
+
+.admission-section h2{
+
+    color:#0b4f2f;
+
+    margin-bottom:30px;
+
+}
+
+.admission-form{
+
+    max-width:600px;
+
+    margin:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.admission-form input,
+.admission-form textarea{
+
+    padding:15px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+}
+
+.admission-form button{
+
+    background:#0b4f2f;
+
+    color:white;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+}
